@@ -22,6 +22,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('/', views.events, name='events'),
+    path('/<int:pk>', views.events_prev)
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 

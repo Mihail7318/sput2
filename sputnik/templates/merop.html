@@ -17,7 +17,7 @@
     		<div class="col-sm"><div class="card" style="width: 18rem;">
   <img src="{{ MEDIA_URL }}{{ m.image.url }}" class="card-img-top" alt="..." id="werm">
   <div class="card-body">
-    <a href="{% url "events" %}" style="text-decoration: none; color: black"><p class="card-text">{{ m.event_text | safe | truncatechars_html:40  }}</p></a>
+    <a href="events/{{ m.id }}" style="text-decoration: none; color: black"><p class="card-text">{{ m.event_text | safe | truncatechars_html:40  }}</p></a>
   </div>
 </div></div>
           {% endfor %}
@@ -34,7 +34,7 @@
     		<div class="col-sm"><div class="card" style="width: 18rem;">
   <img src="{{ MEDIA_URL }}{{ m.image.url }}" class="card-img-top" alt="..." id="werm">
   <div class="card-body">
-    <a href="{% url "events" %}" style="text-decoration: none; color: black"><p class="card-text">{{ m.event_text | safe | truncatechars_html:40  }}</p></a>
+    <a href="events/{{ m.id }}" style="text-decoration: none; color: black"><p class="card-text">{{ m.event_text | safe | truncatechars_html:40  }}</p></a>
   </div>
 </div></div>
           {% endfor %}
@@ -48,7 +48,7 @@
     		<div class="col-sm"><div class="card" style="width: 18rem;">
   <img src="{{ MEDIA_URL }}{{ m.image.url }}" class="card-img-top" alt="..." id="werm">
   <div class="card-body">
-    <a href="{% url "events" %}" style="text-decoration: none; color: black"><p class="card-text">{{ m.event_text | safe | truncatechars_html:40  }}</p></a>
+    <a href="events/{{ m.id }}" style="text-decoration: none; color: black"><p class="card-text">{{ m.event_text | safe | truncatechars_html:40  }}</p></a>
   </div>
 </div></div>
           {% endfor %}

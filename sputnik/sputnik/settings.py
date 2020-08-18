@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'anons',
     'ckeditor',
     'events',
+    'adminlte3',
+    'adminlte3_theme',
 
 ]
 
@@ -87,12 +89,12 @@ WSGI_APPLICATION = 'sputnik.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Название вашей базы данных',
-        'USER': 'Ваш пользователь БД',
-        'PASSWORD': 'Ваше пароль',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'Sputnik',
+        'USER': 'postgres',
+        'PASSWORD': 'hagadi12',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 

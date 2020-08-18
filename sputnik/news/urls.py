@@ -22,6 +22,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('/', views.news, name='news'),
+    path('/<int:pk>', views.news_prev)
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 

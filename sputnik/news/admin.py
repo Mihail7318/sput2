@@ -2,7 +2,9 @@ from django.contrib import admin
 from django.contrib import admin
 from .models import article, covid
 
-admin.site.register(article)
+class ArticleAdmin(admin.ModelAdmin):
+    list_display = ('title', 'image', 'date_a')
+admin.site.register(article, ArticleAdmin)
 admin.site.register(covid)
 # Register your models here.
 

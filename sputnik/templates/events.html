@@ -18,6 +18,11 @@
     <img src="{{ MEDIA_URL }}{{ e.image.url }}" class="mr-2" alt="..." style="height: 250px; width: 300px; border-radius: 10px;">
     <div class="media-body">
       <h5 class="mt-0 mb-1">{{ e.event_title }}</h5>
+     
+      {% for i in e.images.all %}
+      <img src="{{ MEDIA_URL }}{{ i.images.url }}" class="mr-2" alt="..." style="height: 250px; width: 300px; border-radius: 10px;">
+      {% endfor %}
+
       <div class="row">
         <div class="col">
       {{ e.event_text | safe | truncatewords_html:35 }}

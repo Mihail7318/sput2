@@ -7,7 +7,7 @@ class article(models.Model):
     title = models.CharField('Название стьатьи', max_length=100)
     text = RichTextField('Текст записи', blank=True)
     image = models.ImageField(null=False, upload_to="images/", verbose_name='Изображение')
-    date_a = models.DateField(auto_now_add=True)
+    date_a = models.DateField(auto_now_add=True, verbose_name='Дата публикации')
 
     def __str__(self):
         return self.title

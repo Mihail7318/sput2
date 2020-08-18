@@ -9,7 +9,7 @@ def index(request):
     merop2 = event.objects.order_by('-date')[3:6]
     merop3 = event.objects.order_by('-date')[6:9]
     info = covid.objects.all
-    articles = article.objects.order_by('-date_a')[:2]
+    articles = article.objects.order_by('-date_a')
     return render(request, "index.html", {'merop': merop,'merop2': merop2,'merop3': merop3, 'info': info, 'articels': articles})
 
     
